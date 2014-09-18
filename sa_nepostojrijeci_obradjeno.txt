@@ -1,20 +1,20 @@
-Srijema	Srijem	10	imenica
+ï»¿Srijema	Srijem	10	imenica
 i	i		veznik
 balte	balta		imenica
 balta	balta		imenica
 mladih	mladi		pridjev
 tomu	to		zamjenica
-ne	ne		èestica
+ne	ne		Äestica
 svoje	svoj	138	zamjenica
 onima	oni		zamjenica
-fermendinovi	fermendinovi		ne
-Komuloviæa	Komuloviæ	9	imenica
+fermendÅ¾inovi	fermendÅ¾inovi		ne
+KomuloviÄ‡a	KomuloviÄ‡	9	imenica
 Slavenima	Slaven	16	imenica
 osim	osim		prijedlog
 ovim	ovaj	106	zamjenica
-fermendin	fermendin		ne
-Komuloviæeva	Komuloviæev	29	pridjev
-Komuloviæu	Komuloviæ		imenica
+fermendÅ¾in	fermendÅ¾in		ne
+KomuloviÄ‡eva	KomuloviÄ‡ev	29	pridjev
+KomuloviÄ‡u	KomuloviÄ‡		imenica
 sam	biti	139	glagol
 oba	oba		imenica
 iz	iz		prijedlog
@@ -23,26 +23,26 @@ obaju	oba		imenica
 na	na		prijedlog
 tako	tako		prilog
 jedan	jedan		broj
-kolonistièkom	kolonistièki	37	pridjev
+kolonistiÄkom	kolonistiÄki	37	pridjev
 stipanovac	stipanovac		?
-razmeğama	razmeğa		imenica
-Èikeš	Èikeš	9	imenica
+razmeÄ‘ama	razmeÄ‘a		imenica
+ÄŒikeÅ¡	ÄŒikeÅ¡	9	imenica
 Mezopotamije	Mezopotamija	10	imenica
 Dunava	Dunava	10	imenica
 terra	terra		ne
 incognita	incognita		ne
 taj	taj	106	zamjenica
-krajièak	krajièak		imenica
+krajiÄak	krajiÄak		imenica
 svojim	svoj	138	zamjenica
 svoga	svoj	138	zamjenica
 svojom	svoj	138	zamjenica
 slavonsko-podravska	slavonsko-podravska		ne
-eleznica	eleznica		ne
+Å¾eleznica	Å¾eleznica		ne
 Podravine	Podravina	9	imenica
 istorije	istorije		ne
 ovoga	ovaj	106	zamjenica
 Podravini	Podravina	9	imenica
-eleznicom	eleznicom		ne
+Å¾eleznicom	Å¾eleznicom		ne
 prevoznim	prevoznim		ne
 gutmanni	gutmanni		ne
 posedovali	posedovali		ne
@@ -50,47 +50,47 @@ eksploatisali	eksploatisali		ne
 gutmannovih	gutmannovih		ne
 retko	retko		ne
 malo	malo		prilog
-odeæu	odeæu		ne
-eleznièkih	eleznièkih		ne
+odeÄ‡u	odeÄ‡u		ne
+Å¾elezniÄkih	Å¾elezniÄkih		ne
 finansija	finansija		ne
 puno	puno		prilog
-velikomağarskoj	velikomağarski	28	pridjev
+velikomaÄ‘arskoj	velikomaÄ‘arski	28	pridjev
 odnosa	odnos		imenica
-junopodunavski	junopodunavski	28	pridjev
-istoènohrvatskog	istoènohrvatski	28	pridjev
-junodunavskog	junodunavski	28	pridjev
-junopodunavskog	junopodunavski	28	pridjev
-mağarske	mağarski	28	pridjev
+juÅ¾nopodunavski	juÅ¾nopodunavski	28	pridjev
+istoÄnohrvatskog	istoÄnohrvatski	28	pridjev
+juÅ¾nodunavskog	juÅ¾nodunavski	28	pridjev
+juÅ¾nopodunavskog	juÅ¾nopodunavski	28	pridjev
+maÄ‘arske	maÄ‘arski	28	pridjev
 njegovom	njegov	104	zamjenica
-promağarski	promağarski	28	pridjev
+promaÄ‘arski	promaÄ‘arski	28	pridjev
 opismenjavanju	opismenjavanje		imenica
 neke	neki		zamjenica
 hrabaka	hrabaka		ne
 hrabaku	hrabaku		ne
-tamaš	tamaš		ne
-ğura	ğura		?
+tamaÅ¡	tamaÅ¡		ne
+Ä‘ura	Ä‘ura		?
 hardi	hardi		ne
 umetnosti	umetnosti		ne
 neki	neki		zamjenica
 istoriografiju	istoriografiju		ne
-junoslovenske	junoslovenske		ne
+juÅ¾noslovenske	juÅ¾noslovenske		ne
 istoriografije	istoriografije		ne
 izbegavao	izbegavao		ne
 manir	manir		ne
 delovanja	delovanja		ne
 te	te		veznik
-teaka	teak		imenica
+teÅ¾aka	teÅ¾ak		imenica
 hrabak	hrabak		ne
-uèinio	uèiniti		glagol
+uÄinio	uÄiniti		glagol
 uveliko	uveliko		prilog
-podseæaju	podseæaju		ne
-Katanèiæevu	Katanèiæev	29	pridjev
-uopšte	uopšte		ne
-nauènost	nauènost		ne
+podseÄ‡aju	podseÄ‡aju		ne
+KatanÄiÄ‡evu	KatanÄiÄ‡ev	29	pridjev
+uopÅ¡te	uopÅ¡te		ne
+nauÄnost	nauÄnost		ne
 neizmerljivu	neizmerljivu		ne
 vrednost	vrednost		ne
 predlozi	predlozi		ne
-eleznièke	eleznièke		ne
+Å¾elezniÄke	Å¾elezniÄke		ne
 zakasnelo	zakasnelo		ne
 formulisanje	formulisanje		ne
 kalvinske	kalvinske		ne
@@ -104,30 +104,30 @@ historica	historica		ne
 tyrnaviensia	tyrnaviensia		ne
 Trnava	Trnava	10	imenica
 njezina	njezin	104	zamjenica
-našièko-orahovièko-slatinski	našièko-orahovièko-slatinski		ne
-ğakovaèko-osjeèki	ğakovaèko-osjeèki		ne
-poeško-pakraèko-daruvarski	poeško-pakraèko-daruvarski		ne
-iloèko-vukovarski	iloèko-vukovarski		ne
+naÅ¡iÄko-orahoviÄko-slatinski	naÅ¡iÄko-orahoviÄko-slatinski		ne
+Ä‘akovaÄko-osjeÄki	Ä‘akovaÄko-osjeÄki		ne
+poÅ¾eÅ¡ko-pakraÄko-daruvarski	poÅ¾eÅ¡ko-pakraÄko-daruvarski		ne
+iloÄko-vukovarski	iloÄko-vukovarski		ne
 svojih	svoj	138	zamjenica
 hrvatsko-slavonsku	hrvatsko-slavonsku		ne
 manja	manji	46	pridjev
-zahvaljujuæi	zahvaljujuæi		prilog
+zahvaljujuÄ‡i	zahvaljujuÄ‡i		prilog
 svojoj	svoj	138	zamjenica
 njegovi	njegov	104	zamjenica
 mali	mali		pridjev
 Tuzle	Tuzla	10	imenica
 Trnave	Trnava	10	imenica
-nemuštog	nemušti		pridjev
+nemuÅ¡tog	nemuÅ¡ti		pridjev
 samoga	sami		pridjev
-nasušno	nasušni		pridjev
+nasuÅ¡no	nasuÅ¡ni		pridjev
 svoja	svoj	138	zamjenica
-sveuèilišnoprofesorsko	sveuèilišnoprofesorski	28	pridjev
+sveuÄiliÅ¡noprofesorsko	sveuÄiliÅ¡noprofesorski	28	pridjev
 put	put		imenica
 svoj	svoj	138	zamjenica
 CV	CV		kratica
 kadra	kadar		imenica
 baltu	balta		imenica
-naše	naš	104	zamjenica
+naÅ¡e	naÅ¡	104	zamjenica
 kakve	kakav		zamjenica
 sukrivnje	sukrivnja		imenica
 baltinim	baltin		pridjev
@@ -139,27 +139,27 @@ baltini	baltin		imenica
 takve	takav	138	zamjenica
 dana	dan		imenica
 ove	ova		zamjenica
-promašenim	promašeni		pridjev
+promaÅ¡enim	promaÅ¡eni		pridjev
 inovrsnoj	inovrsni		pridjev
 recenzentsku	recenzentski	28	pridjev
 takav	takav	138	zamjenica
 ikome	itko		zamjenica
 koristan	korisni		pridjev
-ništenjem	ništenje		imenica
+niÅ¡tenjem	niÅ¡tenje		imenica
 jedna	jedan		broj
 njegova	njegov	104	zamjenica
-dokuèiti	dokuèiti		glagol
+dokuÄiti	dokuÄiti		glagol
 kakav	kakav		zamjenica
 nekoj	neki		zamjenica
-domaæih	domaæi		pridjev
+domaÄ‡ih	domaÄ‡i		pridjev
 okrenuo	okrenuti		glagol
 njegove	njegov	104	zamjenica
 uratke	uradak		imenica
 kadar	kadar		imenica
-èasopisno	èasopisni		pridjev
+Äasopisno	Äasopisni		pridjev
 samoj	sami		pridjev
 kakva	kakav		zamjenica
-našim	naš	104	zamjenica
+naÅ¡im	naÅ¡	104	zamjenica
 plagijatorska	plagijatorski	28	pridjev
 dvijetri	dvijetri		?
 baltine	baltin		pridjev
@@ -169,12 +169,12 @@ nj	nj		kratica
 nikakve	nikakav	138	zamjenica
 mojim	moj	104	zamjenica
 samih	sami		pridjev
-naših	naš	104	zamjenica
+naÅ¡ih	naÅ¡	104	zamjenica
 miroljubiva	miroljubivi		pridjev
 kavicu	kavica	32	imenica
 ocijenite	ocijeniti		glagol
 kada	kada		prilog
-suureğujete	suureğivati		glagol
+suureÄ‘ujete	suureÄ‘ivati		glagol
 priklonim	prikloniti		glagol
 qui	qui		ne
 tacet	tacet		ne
@@ -182,16 +182,16 @@ consentire	consentire		ne
 videtur	videtur		ne
 bosnae	bosnae		ne
 franciscanae	franciscanae		ne
-prepisivaèkih	prepisivaèki	37	pridjev
+prepisivaÄkih	prepisivaÄki	37	pridjev
 plagijatorskih	plagijatorski	28	pridjev
-štetoèinskih	štetoèinski	28	pridjev
+Å¡tetoÄinskih	Å¡tetoÄinski	28	pridjev
 recenzentska	recenzentski	28	pridjev
 njihove	njihov	104	zamjenica
 izglavila	izglaviti		glagol
 njihovim	njihov	104	zamjenica
 njihova	njihov	104	zamjenica
 samim	sami		pridjev
-preoznaèena	preoznaèeni		pridjev
+preoznaÄena	preoznaÄeni		pridjev
 orijentire	orijentir		imenica
 zaglupljivanja	zaglupljivanje	52	imenica
 ovaj	ovaj	106	zamjenica
