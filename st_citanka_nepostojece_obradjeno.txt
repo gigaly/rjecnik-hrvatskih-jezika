@@ -1,0 +1,130 @@
+Cinezije	Cinezije	9	imenica		
+firman	firman		pridjev		
+odeschalchi	odeschalchi		ne		
+Livije	Livije	68	imenica		
+cerejski	cerejski	28	pridjev		
+braccianski	braccianski	28	pridjev		
+desno	desno		prilog		
+Leopolda	Leopold	8	imenica		
+domaæe	domaæi		pridjev		
+cinesiae	cinesiae		ne		
+firmanus	firmanus		ne		
+bogatinja	bogatinja		ne		
+deliciae	deliciae		ne		
+mundi	mundi		ne		
+Fruška	Fruška	59	pridjev		
+falernskim	falernskim		ne		
+punskim	punski	28	pridjev		
+divi	diviti		glagol		
+Benešiæ	Benešiæ	9	imenica		
+interregnum	interregnum		ne		
+pogubitelj	pogubitelj		imenica		
+Frankapana	Frankapana	68	imenica		
+Ilok	Ilok	10	imenica		
+odescalchima	odescalchima		ne		
+Slankamena	Slankamen	10	imenica		
+epoh	epoh		ne		
+novolat	novolat		ne		
+aera	aer		imenica		
+kakvim	kakav		zamjenica		
+prijelomnim	prijelomni		pridjev		
+zeman	zeman		imenica		
+uèini	uèiniti		glagol		
+nedalekom	nedaleki		pridjev		
+jedne	jedan		pridjev		
+manjeviše	manjeviše		ne		
+odescalchija	odescalchija		ne		
+meðuvremenu	meðuvrijeme		imenica		
+smijenili	smijeniti		glagol		
+Peiæ	Peiæ	68	imenica		
+dade	dati		glagol		
+pseudoantièku	pseudoantièki	37	pridjev		
+Sirmium	Sirmium	10	imenica		
+sirmo	sirmo		ne		
+Prousta	Proust	68	imenica		
+chorographia	chorographia		ne		
+sirmiensis	sirmiensis		ne		
+et	et		ne		
+wilakensis	wilakensis		ne		
+ducatus	ducatus		ne		
+krajopis	krajopis		imenica		
+iloèkog	iloèki	37	pridjev		
+Giuseppea	Giuseppe	19	imenica		
+avanzija	avanzija		ne		
+toposa	toposa		ne		
+aitiološkopovijesni	aitiološkopovijesni		ne		
+feaèko	feaèki	37	pridjev		
+uèinilo	uèiniti		glagol		
+ugasnuæu	ugasnuæe		imenica		
+tezaurièkoidilièni	tezaurièkoidilièni		ne		
+Sirmij	Sirmij	10	imenica		
+tribalskoga	tribalski		pridjev		
+sirma	sirma		ne		
+iznijela	iznijeti		glagol		
+Mezije	Mezija		imenica		
+cererinom	cererinom		ne		
+Sarmacije	Sarmacija		imenica		
+nesvladivim	nesvladivi		pridjev		
+zaposjeli	zaposjesti		glagol		
+Pejonaca	Pejonac		imenica		
+tribalaca	tribalaca		ne		
+preslavno	preslavno		prilog		
+Onufrije	Onufrije		imenica		
+Savom	Sava	10	imenica		
+Dunavom	Dunav	10	imenica		
+Sirmija	Sirmij	10	imenica		
+preobilja	preobilje		imenica		
+prvoroðenca	prvoroðenac		imenica		
+Lovru	Lovro	9	imenica		
+Katarinom	Katarina	9	imenica		
+Lovri	Lovro	9	imenica		
+okrenula	okrenuti		glagol		
+Korvinova	Korvinov	29	pridjev		
+asiškoga	asiški	28	pridjev		
+èasni	èasni		pridjev		
+zatrijeti	zatrijeti		glagol		
+Iloku	Ilok		imenica		
+Srijemom	Srijem	10	imenica		
+otela	oteti		glagol		
+nandoralbu	nandoralbu		ne		
+Slankamen	Slankamen	10	imenica		
+kupinovo	kupinov	29	pridjev		
+bariægrad	bariægrad		ne		
+berkasovo	berkasovo		ne		
+obdržava	obdržavati		glagol		
+usreæila	usreæiti		glagol		
+unesreæio	unesreæiti		glagol		
+strahovlašæe	strahovlašæe		imenica		
+preblagom	preblagi		pridjev		
+Panonije	Panonija	10	imenica		
+Solin	Solin	10	imenica		
+ikoji	ikoji	138	zamjenica		
+ovjenèavaju	ovjenèavati		glagol		
+apartarom	apartarom		ne		
+Fruškom	fruški	37	pridjev		
+cererinu	cererinu		ne		
+bakhove	bakhove		ne		
+pomoninu	pomoninu		ne		
+svakoje	svakoji		zamjenica		
+paladinih	paladinih		ne		
+krošnjata	krošnjati		pridjev		
+množe	množiti		glagol		
+njihovom	njihov		zamjenica		
+gnjetlova	gnjetao		imenica		
+Srijemu	Srijem	10	imenica		
+caesare	caesare		ne		
+romanorum	romanorum		ne		
+collati	collati		ne		
+liuio	liuio		ne		
+odescalki	odescalki		ne		
+anno	anno		ne		
+domini	domini		ne		
+mdciic	mdciic		ne		
+quam	quam		ne		
+author	author		ne		
+ioseph	ioseph		ne		
+dicat	dicat		ne		
+vrbano	vrbano		ne		
+amico	amico		ne		
+l	l		ne		
+"prireðivaèev;"	"prireðivaèev;"		ne		
