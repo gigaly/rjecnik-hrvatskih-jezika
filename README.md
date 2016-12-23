@@ -1,7 +1,7 @@
-HR.Txt
-======
-
 Rječnik hrvatskih jezika
+=========================
+
+23. prosinca 2016. - 602.185 riječi
 
 Rječnik hrvatskih jezika je jedinstveni rječnik koji ima za cilj obuhvatiti sve riječi koje se javljaju u tekstovima pisanim na hrvatskom jeziku. Budući da se mišljenja stručnjaka oko statusa nekih riječi bitno razilaze, ovaj rječnik ima za cilj omogućiti uvrštenje u rječnik i onih riječi za koje neki tvrde da pripadaju hrvatskom jeziku, dok drugi tvrde suprotno.
 
