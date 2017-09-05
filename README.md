@@ -12,3 +12,5 @@ Pozivam vas stoga da odvojite par minuta svog vremena i ispunite jednu kratku an
 Autor i urednik Rječnika hrvatskih jezika je dr. Goran Igaly, viši predavač na PMF-Matematičkom odsjeku Sveučilišta u Zagrebu.
 
 Rječnik hrvatskih jezika je dio sveobuhvatnog projekta čiji je cilj napraviti i učiniti slobodno dostupnima resurse potrebne za promicanje hrvatskog jezika.
+
+5. rujna 2017. - EH.Txt, rječnik engleskih jezika sa 108.835 riječi
