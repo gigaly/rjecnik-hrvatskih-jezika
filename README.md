@@ -1,7 +1,7 @@
 Rječnik hrvatskih jezika
 =========================
 
-<h2>7. rujna 2017.</h2>
+<h2>7. rujna 2017. - prirema za EH Knjigu</h2>
 
 <ul>
 <li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/EH-186.zip">EH.Txt - 186.095 zapisa</a></li>
