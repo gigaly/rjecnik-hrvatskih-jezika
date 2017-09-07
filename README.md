@@ -5,8 +5,8 @@ Rječnik hrvatskih jezika
 
 <ul>
 <li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/EH-186.zip">EH.Txt - 186.095 zapisa</a></li>
-<li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/HR_Txt-624.zip">HR.Txt 624.371 zapis</a></li>
-<li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/EN_Txt-108.zip">EN.Txt 108.385 zapisa</a></li>
+<li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/HR_Txt-624.zip">HR.Txt - 624.371 zapis</a></li>
+<li><a href="https://github.com/gigaly/rjecnik-hrvatskih-jezika/blob/master/EN_Txt-108.zip">EN.Txt - 108.385 zapisa</a></li>
 </ul>
 
 <h2>23. prosinca 2016. - 602.185 riječi</h2>
