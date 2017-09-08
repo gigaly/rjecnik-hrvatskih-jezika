@@ -1,0 +1,30 @@
+Option Compare Database
+Option Explicit
+
+Public Function ucitaj_EHTxt(NazivDatoteke As String)
+Dim fst As New ADODB.Stream, tc As DAO.Recordset
+Dim i As Long, pom As String, p() As String
+
+fst.Charset = "utf-8"
+fst.Open
+fst.Type = adTypeText
+fst.LoadFromFile NazivDatoteke
+
+Set tc = CodeDb.OpenRecordset("EH_Txt")
+i = 0
+Do While Not fst.EOS
+  pom = fst.ReadText(-2)
+  i = i + 1
+  If i Mod 1000 = 0 Then Debug.Print (i)
+  p = Split(pom, vbTab)
+  If UBound(p) = 1 Then
+    tc.AddNew
+    tc("ID") = i
+    tc("Engleski") = p(0)
+    tc("Hrvatski") = p(1)
+    tc.Update
+  Else
+    Debug.Print i & ": " & pom
+  End If
+Loop
+End Function

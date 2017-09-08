@@ -1,0 +1,73 @@
+Option Compare Database
+Option Explicit
+
+Public Function napravi_jednojezicnu_tablicu(NazivTablice As String)
+Dim naredba As String, poruka As String
+
+On Error Resume Next
+
+DoCmd.DeleteObject acTable, NazivTablice
+If Err.Number <> 0 Then
+  ' You can't delete the database object 'EN_Txt' while it's open.
+  If Err.Number = 2008 Then
+    poruka = "Pogreška: " & Err.Number & vbCrLf & _
+             Err.Description & vbCrLf & _
+             "Zatvorite tablicu " & NazivTablice & " i pokušajte ponovno"
+    MsgBox (poruka)
+    On Error GoTo 0
+    napravi_jednojezicnu_tablicu = 1
+    Exit Function
+  End If
+  Err.Clear
+End If
+
+naredba = "CREATE TABLE %1% ( " & _
+          " ID Long, " & _
+          " [Kosi oblik] Text(50), [Osnovni oblik] Text(50), " & _
+          " Oznaka Memo, [Vrsta rijeèi] Text(20), " & _
+          " Promjena Text(20) );"
+naredba = Replace(naredba, "%1%", NazivTablice)
+DoCmd.RunSQL (naredba)
+
+If Err.Number <> 0 Then
+  MsgBox ("Pogreška: " & Err.Number & vbCrLf & Err.Description)
+  On Error GoTo 0
+  napravi_jednojezicnu_tablicu = 2
+  Exit Function
+End If
+
+napravi_jednojezicnu_tablicu = 0
+End Function
+
+
+Public Function ucitaj_jednojezicni_rjecnik(NazivDatoteke As String, NazivTablice As String) As Long
+Dim fst As New ADODB.Stream, pom As String
+Dim tc As DAO.Recordset
+Dim p() As String, i As Long
+
+fst.Charset = "utf-8"
+fst.Open
+fst.Type = adTypeText
+fst.LoadFromFile NazivDatoteke
+fst.LineSeparator = adCRLF
+
+Set tc = CodeDb.OpenRecordset(NazivTablice)
+i = 0
+Do While Not fst.EOS
+  pom = fst.ReadText(-2)
+  p = Split(pom, vbTab)
+  i = i + 1
+  If i Mod 1000 = 0 Then Debug.Print (i)
+  If UBound(p) = 3 Then
+    tc.AddNew
+    tc("ID") = i
+    tc("Kosi oblik") = p(0)
+    tc("Osnovni oblik") = p(1)
+    tc("Oznaka") = p(2)
+    tc("Vrsta rijeèi") = p(3)
+    tc.Update
+  Else
+    Debug.Print i & ": " & pom
+  End If
+Loop
+End Function

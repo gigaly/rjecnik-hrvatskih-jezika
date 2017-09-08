@@ -1,0 +1,18 @@
+Option Compare Database
+Option Explicit
+
+Public Function napravi_tablicu_EHTxt()
+Dim naredba As String
+naredba = " CREATE TABLE EH_Txt " & _
+          " ( ID Integer, Engleski Text(50), Hrvatski Text(50), " & _
+          "   [Broj rijeèi HR] SmallInt, [Broj rijeèi EN] SmallInt, " & _
+          "   [Opæenita vrsta rijeèi HR] Text(100), [Opæenita VR HR] Text(50), " & _
+          "   [Opæenita vrsta rijeèi EN] Text(100), [Opæenita VR EN] Text(50) );"
+DoCmd.RunSQL (naredba)
+End Function
+
+Public Function zad_01_04()
+Dim naredba As String
+naredba = "CREATE TABLE zad_01_04 (P1 text(50), p2 Memo, p3 Long, p4 AutoIncrement);"
+DoCmd.RunSQL (naredba)
+End Function

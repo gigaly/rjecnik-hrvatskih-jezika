@@ -1,0 +1,34 @@
+Option Compare Database
+Option Explicit
+
+
+
+Public Function dodaj_reference()
+
+' Microsoft ActiveX Data Objects 6.1 Librry
+Application.References.AddFromFile ("C:\Program Files\Common Files\System\ado\msado15.dll")
+
+' Microsoft Scripting Runtime
+Application.References.AddFromFile ("C:\Windows\system32\scrrun.dll")
+
+End Function
+
+
+
+Public Function uvezi_sve(n As Integer, mapa As String)
+Dim i As Integer
+For i = 0 To n
+  Call LoadFromText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")
+Next
+Call LoadFromText(acModule, "Admin", mapa & "\Admin.txt")
+End Function
+
+
+
+Public Function izvezi_sve(n As Integer, mapa As String)
+Dim i As Integer
+For i = 0 To n
+  Call SaveAsText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")
+Next
+Call SaveAsText(acModule, "Admin", mapa & "\Admin.txt")
+End Function

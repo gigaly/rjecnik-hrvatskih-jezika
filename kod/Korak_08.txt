@@ -1,0 +1,78 @@
+Option Compare Database
+Option Explicit
+
+Public Function odredi_opcenite_VR_pojmova(DvojezicniRjecnik As String, KoordinatiziraniPojmovi As String, SveRijeci As String, jez As String)
+Dim upit As String
+Dim ID As String, noviID As String, brojRijeci As Integer
+Dim opcenitaVrstaRijeci As String, opcenitaVR As String, brojac As Long
+
+
+upit = " SELECT [ID prijevoda], Mjesto, [Opæenita Vrsta rijeèi], [Opæenita VR] " & _
+       " FROM [%1%] LEFT JOIN [%2%] ON [%1%].Rijeè = [%2%].Rijeè " & _
+       " ORDER BY [ID prijevoda], Mjesto;"
+upit = Replace(upit, "%1%", KoordinatiziraniPojmovi)
+upit = Replace(upit, "%2%", SveRijeci)
+
+Dim tc As DAO.Recordset, tc2 As DAO.Recordset
+Set tc = CodeDb.OpenRecordset(upit)
+Set tc2 = CodeDb.OpenRecordset(DvojezicniRjecnik)
+
+tc2.MoveFirst
+tc.MoveFirst
+ID = -1
+opcenitaVrstaRijeci = ""
+opcenitaVR = ""
+brojac = 0
+brojRijeci = 0
+Do While Not tc2.EOF And Not tc.EOF
+  noviID = Trim(tc("ID prijevoda"))
+  If noviID <> ID Then
+    If ID <> -1 Then
+      tc2.Edit
+      tc2("Opæenita vrsta rijeèi " & jez) = opcenitaVrstaRijeci
+      tc2("Opæenita VR " & jez) = opcenitaVR
+      tc2("Broj rijeèi " & jez) = brojRijeci
+      tc2.Update
+      tc2.MoveNext
+    End If
+          
+    ID = noviID
+    opcenitaVR = tc("Opæenita VR")
+    opcenitaVrstaRijeci = tc("Opæenita vrsta rijeèi")
+    brojRijeci = 1
+  Else
+    opcenitaVR = opcenitaVR & " " & tc("Opæenita VR")
+    opcenitaVrstaRijeci = opcenitaVrstaRijeci & " " & tc("Opæenita vrsta rijeèi")
+    brojRijeci = brojRijeci + 1
+  End If
+  tc.MoveNext
+  brojac = brojac + 1
+  If (brojac Mod 1000) = 0 Then Debug.Print brojac
+  ' If (brojac Mod 1000) = 0 Then Exit Function
+Loop
+
+tc2.Edit
+tc2("Opæenita vrsta rijeèi " & jez) = opcenitaVrstaRijeci
+tc2("Opæenita VR " & jez) = opcenitaVR
+tc2("Broj rijeèi " & jez) = brojRijeci
+tc2.Update
+  
+tc.Close
+tc2.Close
+
+End Function
+
+
+Public Function upit_1()
+Dim upit As String
+upit = " SELECT Hrvatski, Engleski, EH_Txt.[Opæenita vrsta rijeèi HR], EH_Txt.[Opæenita vrsta rijeèi EN] " & _
+       " FROM EH_Txt LEFT JOIN [Dobre promjene] ON " & _
+       " (EH_Txt.[Opæenita vrsta rijeèi EN] = [Dobre promjene].[Opæenita vrsta rijeèi EN]) AND " & _
+       " (EH_Txt.[Opæenita vrsta rijeèi HR] = [Dobre promjene].[Opæenita vrsta rijeèi HR]) " & _
+       " WHERE EH_Txt.[Broj rijeèi HR] = 1 And [Dobre promjene].ID Is Not Null " & _
+       " ORDER BY Hrvatski, Engleski;"
+Call CodeDb.CreateQueryDef("upit_1", upit)
+DoCmd.OpenQuery ("upit_1")
+
+End Function
+d

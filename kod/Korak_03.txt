@@ -1,0 +1,121 @@
+Option Compare Database
+Option Explicit
+
+Public Function primjer_01_02()
+Dim naredba As String
+naredba = "CREATE TABLE primjer_01_02 (p1 varchar(50), p2 varchar(50));"
+DoCmd.RunSQL (naredba)
+End Function
+
+
+Public Function primjer_01_02a()
+Dim naredba As String
+
+On Error GoTo popravak
+  naredba = "CREATE TABLE primjer_01_02 (p1 varchar(50), p2 varchar(50));"
+  DoCmd.RunSQL (naredba)
+On Error GoTo 0
+
+Exit Function
+
+popravak:
+  MsgBox "Došlo je do pogreške " & Err.Number
+
+End Function
+
+
+
+Public Function primjer_01_02b()
+Dim naredba As String
+
+On Error GoTo popravak
+  naredba = "CREATE TABLE primjer_01_02 (p1 varchar(50), p2 varchar(50));"
+  DoCmd.RunSQL (naredba)
+On Error GoTo 0
+
+MsgBox "1. sluèaj:" & vbCrLf & "Tablica uspješno kreirana."
+Exit Function
+
+popravak:
+  naredba = "DROP TABLE primjer_01_02;"
+  DoCmd.RunSQL (naredba)
+  MsgBox "2. sluèaj:" & vbCrLf & "Došlo je do pogreške " & Err.Number & " pa je tablica obrisana"
+
+End Function
+
+
+
+Public Function primjer_01_02c()
+Dim naredba As String
+Dim status As String
+
+status = "OK"
+On Error GoTo popravak
+  naredba = "DROP TABLE primjer_01_02;"
+  DoCmd.RunSQL (naredba)
+  
+  If status = status = "OK" Or status = "Tablica ne postoji" Then
+    naredba = "CREATE TABLE primjer_01_02 (p1 varchar(50), p2 varchar(50));"
+    DoCmd.RunSQL (naredba)
+  Else
+    MsgBox "Tablica nije obrisana." & vbCrLf & "Razlog: " & status
+  End If
+Exit Function
+
+popravak:
+  If Err.Number = 3211 Then
+    status = "Tablica zakljuèana i ne može se obrisati"
+  End If
+  If Err.Number = 3376 Then
+    status = "Tablica ne postoji"
+  Else
+    status = "Neki nepoznati razlog "
+  End If
+  Resume Next
+
+End Function
+
+Public Function Primjer_03_03()
+Dim naredba As String
+Dim qd As QueryDef
+On Error Resume Next
+DoCmd.DeleteObject acQuery, "primjer_03_03"
+Err.Clear
+On Error GoTo 0
+naredba = "SELECT Engleski, Hrvatski FROM EH_Txt WHERE Engleski Like '*[0-9]*' OR Hrvatski Like '*[0-9]*';"
+Set qd = CodeDb.CreateQueryDef("primjer_03_03", naredba)
+DoCmd.OpenQuery ("primjer_03_03")
+End Function
+
+Public Function Primjer_03_04()
+Dim naredba As String, qd As QueryDef
+On Error Resume Next
+DoCmd.DeleteObject acQuery, "primjer_03_04"
+Err.Clear
+On Error GoTo 0
+naredba = "SELECT Engleski, Hrvatski FROM EH_Txt WHERE Engleski Not Like '* *';"
+Set qd = CodeDb.CreateQueryDef("primjer_03_04", naredba)
+DoCmd.OpenQuery ("primjer_03_04")
+End Function
+
+Public Function Primjer_03_05()
+Dim naredba As String, qd As QueryDef
+On Error Resume Next
+DoCmd.DeleteObject acQuery, "primjer_03_05"
+Err.Clear
+On Error GoTo 0
+naredba = "SELECT Engleski, Hrvatski FROM EH_Txt WHERE Hrvatski Not Like '* *';"
+Set qd = CodeDb.CreateQueryDef("primjer_03_05", naredba)
+DoCmd.OpenQuery ("primjer_03_05")
+End Function
+
+Public Function Primjer_03_06()
+Dim naredba As String, qd As QueryDef
+On Error Resume Next
+DoCmd.DeleteObject acQuery, "primjer_03_06"
+Err.Clear
+On Error GoTo 0
+naredba = "SELECT Engleski, Hrvatski FROM EH_Txt WHERE Hrvatski Like '*[()]*' or hrvatski like '*[()]*';"
+Set qd = CodeDb.CreateQueryDef("primjer_03_06", naredba)
+DoCmd.OpenQuery ("primjer_03_06")
+End Function

@@ -1,0 +1,71 @@
+Option Compare Database
+Option Explicit
+
+Public Function Svi_koraci()
+
+Debug.Print "Korak 01"
+
+Debug.Print "napravi_tablicu_EHTxt()"
+Call napravi_tablicu_EHTxt
+
+
+
+Debug.Print "Korak 02"
+
+Debug.Print "ucitaj_EHTxt(""D:\EHKnjiga\EH-186.Txt"")"
+Call ucitaj_EHTxt("D:\EHKnjiga\EH-186.Txt")
+
+
+
+Debug.Print "Korak 04"
+
+Call napravi_jednojezicnu_tablicu("HR_Txt")
+Call ucitaj_jednojezicni_rjecnik("D:\EHKnjiga\HR_Txt-624.txt", "HR_Txt")
+
+Call napravi_jednojezicnu_tablicu("EN_Txt")
+Call ucitaj_jednojezicni_rjecnik("D:\EHKnjiga\EN_Txt-108.txt", "EN_Txt")
+
+
+
+
+Debug.Print "Korak 05"
+
+Call odredi_promjene_u_jednojezicnom_rjecniku("HR_Txt")
+Call odredi_promjene_u_jednojezicnom_rjecniku("EN_Txt")
+
+
+
+Debug.Print "Korak 06"
+
+Call napravi_tablicu_koordinatiziranih_pojmova("Koordinatizirani HR pojmovi")
+Call napuni_tablicu_koordinatiziranih_pojmova("EH_Txt", "Koordinatizirani HR pojmovi", "Hrvatski", "Engleski")
+
+
+Call napravi_tablicu_koordinatiziranih_pojmova("Koordinatizirani EN pojmovi")
+Call napuni_tablicu_koordinatiziranih_pojmova("EH_Txt", "Koordinatizirani EN pojmovi", "Engleski", "Hrvatski")
+
+
+
+
+Debug.Print "Korak 07"
+
+Call napravi_popis_svih_rijeci("Sve rijeèi iz HR pojmova", "Koordinatizirani HR pojmovi")
+Call napravi_popis_svih_rijeci("Sve rijeèi iz EN pojmova", "Koordinatizirani EN pojmovi")
+
+Call napravi_VR_kratko
+
+Call odredi_opcenite_vrste_rijeci("Sve rijeèi iz HR pojmova", "HR_Txt")
+Call odredi_opcenite_vrste_rijeci("Sve rijeèi iz EN pojmova", "EN_Txt")
+
+
+
+
+Debug.Print "Korak 08"
+
+Call odredi_opcenite_VR_pojmova("EH_Txt", "Koordinatizirani HR pojmovi", "Sve rijeèi iz HR pojmova", "HR")
+Call odredi_opcenite_VR_pojmova("EH_Txt", "Koordinatizirani EN pojmovi", "Sve rijeèi iz EN pojmova", "EN")
+
+' Koordinatizirani HR pojmovi
+' Sve rijeèi iz HR pojmova
+
+End Function
