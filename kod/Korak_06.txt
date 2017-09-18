@@ -7,7 +7,7 @@ naredba = _
   " CREATE TABLE [%1%] " & _
   " ( ID Integer, Rijeè Text(50), " & _
   " [ID prijevoda] Integer,  Mjesto SmallInt, " & _
-  " [Opæenita vrsta rijeèi] Text(50), [Opæenita VR] Text(50) " & _
+  " [Opæenita vrsta rijeèi] Text(50), [Opæenita VR] Text(50), " & _
   " Pojam Text(50), Pojam2 Text(50) );"
 naredba = Replace(naredba, "%1%", NazivTablice)
 DoCmd.RunSQL (naredba)
