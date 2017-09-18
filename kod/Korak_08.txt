@@ -7,7 +7,7 @@ Dim ID As String, noviID As String, brojRijeci As Integer
 Dim opcenitaVrstaRijeci As String, opcenitaVR As String, brojac As Long
 
 
-upit = " SELECT [ID prijevoda], Mjesto, [Opæenita Vrsta rijeèi], [Opæenita VR] " & _
+upit = " SELECT [ID prijevoda], Mjesto, [%2%].[Opæenita Vrsta rijeèi], [%2%].[Opæenita VR] " & _
        " FROM [%1%] LEFT JOIN [%2%] ON [%1%].Rijeè = [%2%].Rijeè " & _
        " ORDER BY [ID prijevoda], Mjesto;"
 upit = Replace(upit, "%1%", KoordinatiziraniPojmovi)

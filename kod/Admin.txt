@@ -22,6 +22,7 @@ End Function
 
 
 Public Function uvezi_sve(n As Integer, mapa As String)
+
 Dim i As Integer
 For i = 0 To n
   Call LoadFromText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")
@@ -31,7 +32,7 @@ End Function
 
 
 Public Function izvezi_sve(n As Integer, mapa As String)
-' call izvezi_sve(11,"D:\EHKnjiga\kod"
+' call izvezi_sve(11,"D:\EHKnjiga\kod")
 Dim i As Integer
 For i = 0 To n
   Call SaveAsText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")
