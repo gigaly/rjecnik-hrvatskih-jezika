@@ -75,4 +75,3 @@ Call CodeDb.CreateQueryDef("upit_1", upit)
 DoCmd.OpenQuery ("upit_1")
 
 End Function
-d

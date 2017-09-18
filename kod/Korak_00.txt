@@ -68,4 +68,29 @@ Call odredi_opcenite_VR_pojmova("EH_Txt", "Koordinatizirani EN pojmovi", "Sve ri
 ' Koordinatizirani HR pojmovi
 ' Sve rijeèi iz HR pojmova
 
+
+Debug.Print "Korak 09"
+
+Call ucitaj_tablicu("Dobri_parovi_OVR", "D:\EHKnjiga\kod\Pomocne_tablice.txt")
+
+Call napravi_tablicu_jezjez_1("EH_Txt", "Hrvatski", "Engleski", "HR", "EN")
+Call napravi_tablicu_jezjez_1("EH_Txt", "Engleski", "Hrvatski", "EN", "HR")
+
+Debug.Print "Korak 10"
+
+Call generiraj_latex("HREN_1", "HR", "EN", "Vrsta rijeèi HR", "d:\EHKnjiga\latex")
+
+Debug.Print "Korak 11"
+
+Call napravi_jez_1("HR", "EH", "Hrvatski")
+Call napravi_jez_1("EN", "EH", "Engleski")
+
+Call popuni_opcenite_vr_koordinatiziranih_pojmova("EN")
+Call popuni_opcenite_vr_koordinatiziranih_pojmova("HR")
+
+Call ucitaj_tablicu("Blokirane_HR_natuknice", "D:\EHKnjiga\kod\Pomocne_tablice.txt")
+Call ucitaj_tablicu("Blokirane_EN_natuknice", "D:\EHKnjiga\kod\Pomocne_tablice.txt")
+
+
+Call dodijeli_statuse_u_EHTxt
 End Function

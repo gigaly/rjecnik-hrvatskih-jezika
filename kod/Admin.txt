@@ -6,10 +6,16 @@ Option Explicit
 Public Function dodaj_reference()
 
 ' Microsoft ActiveX Data Objects 6.1 Librry
+On Error Resume Next
 Application.References.AddFromFile ("C:\Program Files\Common Files\System\ado\msado15.dll")
+MsgBox Err.Number & vbCrLf & Err.Description
+Err.Clear
 
 ' Microsoft Scripting Runtime
 Application.References.AddFromFile ("C:\Windows\system32\scrrun.dll")
+MsgBox Err.Number & vbCrLf & Err.Description
+Err.Clear
+On Error GoTo 0
 
 End Function
 
@@ -20,12 +26,12 @@ Dim i As Integer
 For i = 0 To n
   Call LoadFromText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")
 Next
-Call LoadFromText(acModule, "Admin", mapa & "\Admin.txt")
 End Function
 
 
 
 Public Function izvezi_sve(n As Integer, mapa As String)
+' call izvezi_sve(11,"D:\EHKnjiga\kod"
 Dim i As Integer
 For i = 0 To n
   Call SaveAsText(acModule, "Korak_" & Format(i, "00"), mapa & "\Korak_" & Format(i, "00") & ".txt")

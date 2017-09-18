@@ -7,6 +7,7 @@ naredba = _
   " CREATE TABLE [%1%] " & _
   " ( ID Integer, Rijeè Text(50), " & _
   " [ID prijevoda] Integer,  Mjesto SmallInt, " & _
+  " [Opæenita vrsta rijeèi] Text(50), [Opæenita VR] Text(50) " & _
   " Pojam Text(50), Pojam2 Text(50) );"
 naredba = Replace(naredba, "%1%", NazivTablice)
 DoCmd.RunSQL (naredba)
@@ -38,7 +39,7 @@ End Function
 
 Public Function napuni_tablicu_koordinatiziranih_pojmova( _
   DvojezicnaTablica As String, JednojezicnaTablica As String, _
-  Jezik1 As String, Jezik2 As String)
+  jezik1 As String, jezik2 As String)
 Dim tc As DAO.Recordset, tc2 As DAO.Recordset
 Dim p() As String, t As String, s As String, i As Integer, brojac As Long
 
@@ -48,7 +49,7 @@ Set tc2 = CodeDb.OpenRecordset(JednojezicnaTablica)
 brojac = 0
 tc.MoveFirst
 Do While Not tc.EOF
-  t = Trim(tc(Jezik1)): s = Trim(tc(Jezik2))
+  t = Trim(tc(jezik1)): s = Trim(tc(jezik2))
   p = pametni_split(t)
       
   For i = 0 To UBound(p)
